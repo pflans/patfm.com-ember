@@ -1,0 +1,79 @@
+/* VARIABLES */
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #193441;
+$primary-bg: #FCFFF5;
+$secondary-bg: #91AA9D;
+$tertiary-bg: #D1DBBD;
+
+/* MIX-INS */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+/* STYLES BEGIN */
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: $primary-bg;
+}
+
+header{
+	background-color: $secondary-bg;
+	height: 15%;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	.navbar{
+	    width:100%;
+	    text-align: center;
+		ul.nav{
+			list-style:none;
+			margin:1% 0;
+			padding:0;
+			li{
+				display:inline;
+				list-style:none;
+				a{
+				    margin:0 5%;
+				    color:#000;
+				    text-decoration:none;
+				    &:hover{
+				    	text-decoration: underline;
+				    }
+				    &.active, &.active:hover{
+				    	font-weight:bold;
+				    }
+				}
+			}
+		}
+	}
+}
+
+.post{
+	width: 75%;
+	margin: 5% auto;
+	p{
+		clear: both;
+		padding: 1%;
+		background-color: $tertiary-bg;
+		@include border-radius(10px); 
+		border: 1px solid #000;
+	}
+	h2{
+		padding: 1%;
+		float: left;
+		a{
+			color: #000;
+		}
+	}
+	span{
+		padding: 1%;
+		float: right;
+	}
+}

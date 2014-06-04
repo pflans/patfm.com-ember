@@ -1,0 +1,66 @@
+/* VARIABLES */
+/* MIX-INS */
+/* STYLES BEGIN */
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #193441;
+  background-color: #fcfff5;
+}
+
+header {
+  background-color: #91aa9d;
+  height: 15%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+header .navbar {
+  width: 100%;
+  text-align: center;
+}
+header .navbar ul.nav {
+  list-style: none;
+  margin: 1% 0;
+  padding: 0;
+}
+header .navbar ul.nav li {
+  display: inline;
+  list-style: none;
+}
+header .navbar ul.nav li a {
+  margin: 0 5%;
+  color: #000;
+  text-decoration: none;
+}
+header .navbar ul.nav li a:hover {
+  text-decoration: underline;
+}
+header .navbar ul.nav li a.active, header .navbar ul.nav li a.active:hover {
+  font-weight: bold;
+}
+
+.post {
+  width: 75%;
+  margin: 5% auto;
+}
+.post p {
+  clear: both;
+  padding: 1%;
+  background-color: #d1dbbd;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.post h2 {
+  padding: 1%;
+  float: left;
+}
+.post h2 a {
+  color: #000;
+}
+.post span {
+  padding: 1%;
+  float: right;
+}
